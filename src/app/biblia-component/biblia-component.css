@@ -1,0 +1,14 @@
+.card{
+  padding: 2rem;
+  box-shadow: 5px 10px 20px var(--secondary-color);
+
+}
+
+.card-titulo{
+  font-size: 1.5rem;
+  color:var(--secondary-color);
+}
+
+.card-content{
+
+}

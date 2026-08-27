@@ -1,1 +1,83 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+  --primary-color: #333333;
+  --secondary-color: #555454;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Inter',Arial, Helvetica, sans-serif;
+
+  color: var(--secondary-color) ;
+
+  transition: all 0.1s linear;
+
+}
+a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s linear;
+  border-bottom: 10px solid transparent;
+
+  height: 100%;
+  padding: 16px;
+}
+
+a:hover{
+  border-bottom: 10px solid red;
+}
+
+a.ativo{
+ border-bottom: 10px solid red;
+}
+
+
+.container-page{
+  width: 100%;
+  padding: 7rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.titulo-pagina{
+  font-size: 2rem;
+  color:var(--primary-color);
+  line-height: 2rem;
+  padding:50px 0;
+}
+
+
+button{
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: var(--secondary-color);
+  color: #f1f1f1f1;
+
+}
+
+
+
+input{
+  width: 100%;
+  border: 1px solid var(--primary-color);
+  outline: none;
+  padding: 10px;
+  margin:10px 0;
+}
+
+form{
+  width: 100%;
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 15px;
+}

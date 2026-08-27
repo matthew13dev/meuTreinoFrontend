@@ -1,0 +1,25 @@
+<app-menu-component></app-menu-component>
+
+<div class="container-page">
+
+  <app-biblia-component></app-biblia-component>
+
+  <div class="toggle-container">
+
+    @for (nome of nomesTreinos;track nome){
+      <button (click)="mudarToggle(nome)">{{nome}}</button>
+    }
+  </div>
+
+
+  @for (treino of meusTreinos; track treino){
+
+    @if (botaoToggle === treino.nome){
+        <app-card-list-meu-treino [meuTreino]="treino"></app-card-list-meu-treino>
+    }
+
+  }
+
+
+
+</div>

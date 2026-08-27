@@ -1,0 +1,13 @@
+<div class="card-list">
+
+    @for (exercicio of meuTreino?.exerciciosTreino ; track exercicio ){
+
+      <div class="card-item">
+        <p [class.riscado]="exercicio.feito"  class="card-title">{{exercicio.nome}}</p>
+        <p [class.riscado]="exercicio.feito" >{{exercicio.agrupamento_muscular}}/musculo_especifico.</p>
+        <p [class.riscado]="exercicio.feito" >{{exercicio.tipo}}</p>
+
+        <button (click)="treinoConcluido(exercicio)">{{ exercicio.feito ? "Desfazer": "Concluído" }}</button>
+      </div>
+    }
+</div>
