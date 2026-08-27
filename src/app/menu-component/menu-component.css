@@ -1,0 +1,12 @@
+nav{
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  height: 80px;
+  position: fixed;
+  width: 100%;
+}
+
+
