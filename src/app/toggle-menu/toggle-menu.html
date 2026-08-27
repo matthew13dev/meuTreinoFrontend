@@ -1,0 +1,5 @@
+<div class="toggle-container">
+  @for (nome of nomesTreinos;track nome){
+    <button [class.ativo]="selecionado == nome " (click)="mudarToggle(nome)">{{nome}}</button>
+  }
+</div>

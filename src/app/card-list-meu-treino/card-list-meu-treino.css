@@ -22,3 +22,14 @@
 .card-item:hover{
   transform: scale(1.05);
 }
+
+
+.card-item p{
+  line-height: 2rem;
+}
+
+.card-item button{
+  padding: 10px;
+  width: 100%;
+  border-radius: 15px;
+}

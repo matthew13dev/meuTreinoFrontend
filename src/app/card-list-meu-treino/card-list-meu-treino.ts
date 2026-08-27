@@ -1,5 +1,5 @@
-import {Component, EventEmitter, Input, Output} from '@angular/core';
-import {ExercicioDTO, MeuTreinoDTO} from '../services/meusTreinosDB';
+import {Component, EventEmitter, Input, model, Output} from '@angular/core';
+import {ExercicioDTO, LISTA_GERAL_MEUS_TREINOS, MeuTreinoDTO} from '../services/meusTreinosDB';
 
 @Component({
   imports: [],
@@ -9,13 +9,14 @@ import {ExercicioDTO, MeuTreinoDTO} from '../services/meusTreinosDB';
 })
 export class CardListMeuTreino {
 
-  @Input() meuTreino?:MeuTreinoDTO;
+  meusTreinosDTO: MeuTreinoDTO[] = LISTA_GERAL_MEUS_TREINOS;
+  @Input() selecionado?:string;
 
 
   protected treinoConcluido(treino:ExercicioDTO) {
 
     if(treino.feito == null) {
-      treino.feito = true;
+      treino.feito = false;
     }
 
     treino.feito = !treino.feito;

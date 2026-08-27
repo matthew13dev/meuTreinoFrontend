@@ -1,0 +1,37 @@
+button{
+  background-color: #4444;
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+button:hover{
+  background-color: red;
+  cursor: pointer;
+  color: aliceblue;
+}
+
+button.ativo{
+  background-color: red;
+  color: aliceblue;
+}
+
+
+
+
+.ativo{
+  background-color: red;
+}
+
+.btns-treinos button{
+  border-radius: 0;
+}
+
+
+.toggle-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
